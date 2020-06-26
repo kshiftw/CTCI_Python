@@ -1,11 +1,11 @@
 """ Cracking the Coding Interview, 6th Edition - Python Solutions
-1.3 URLify: Write a method to replace all spaces in a string with '%20:
+1.3 URLify: Write a method to replace all spaces in a string with '%20'
 """
 import unittest
 from unittest import TestCase
 
 
-def urlify(string):
+def urlify(string: str) -> str:
     """ Returns a new string where all space character are replace by "%20".
 
     Idea: Find all instances of space characters and replace with "%20"
