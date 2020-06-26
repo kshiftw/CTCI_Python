@@ -9,6 +9,8 @@ from unittest import TestCase
 def is_unique(string: str) -> bool:
     """ Checks if a string has all unique characters.
 
+    Idea: A string can only be unique if there is either 0 or 1 occurrences of each possible character.
+
     Approach:
     - Loop through all characters of the string
     - Keep a count of the number of occurrences for each character using a dictionary, char_dict
