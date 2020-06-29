@@ -23,7 +23,7 @@ def one_away(string_one, string_two):
     - If the strings have unequal lengths, determine which one is the shorter vs longer string
         - If we see a mismatch, keep track of it using the shift variable
             - If the second character is also a mismatch, ie. 'abc' and 'abdf', then there needs to be more than one
-            edit, return False
+            edit to make the strings equal, return False
             - If we see a mismatch again, return False
     """
     length_one = len(string_one)
