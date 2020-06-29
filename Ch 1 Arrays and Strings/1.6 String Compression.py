@@ -42,7 +42,7 @@ def string_compression(string: str) -> str:
     return result_str
 
 
-class TestOneAway(TestCase):
+class TestStringCompression(TestCase):
     def testA(self):
         actual = string_compression('joker')
         expected = "j1o1k1e1r1"
