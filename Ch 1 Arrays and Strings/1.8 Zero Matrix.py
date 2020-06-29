@@ -14,6 +14,10 @@ def zero_matrix(matrix: list) -> list:
 
     Approach:
     - Loop through all cells of the matrix, if it is a 0 and an original zero, set all cells in that row and column to 0
+
+    Alternatives:
+    - Current solution uses O(MN) space. Can reduce it to O(M+N) space by keeping track of only the row and column
+    indices that have a zero. Then loop through each of these indices to set the zeros
     """
     rows = len(matrix)
     cols = len(matrix[0])
