@@ -22,6 +22,9 @@ class LinkedList:
     def get_head(self):
         return self.head
 
+    def set_head(self, node):
+        self.head = node
+
     def get_values(self):
         value_list = [elem.value for elem in self]
         return value_list
