@@ -16,6 +16,12 @@ def intersection(first_llist: object, second_llist: object) -> object:
     - If we store all node objects from one linked list into a dictionary, we can check all nodes from the other linked
     list and see if it was also in the first one
 
+    Complexity:
+    - Time: O(A + B)
+        - needs to loop through all elements in first linked list and potentially all of second linked list
+    - Space: O(A)
+        - needs to store all nodes of first linked list
+
     Approach:
     - Loop through all nodes in first linked list and store the nodes as keys
     - Loop through all nodes in second linked list
