@@ -29,6 +29,20 @@ class LinkedList:
         value_list = [elem.value for elem in self]
         return value_list
 
+    def append_head(self, node):
+        node.next = self.head
+        self.head = node
+
+    def get_tail(self):
+        node = self.head
+        while node.next:
+            node = node.next
+        return node
+
+    def append_tail(self, llist):
+        tail = self.get_tail()
+        tail.next = llist.get_head()
+
 
 class Node:
     def __init__(self, value):
