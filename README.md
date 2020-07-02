@@ -1,7 +1,5 @@
-# CTCI_Python
+# CTCI_Python (WORK IN PROGRESS)
 My attempts at solving questions in Cracking the Coding Interview 6th Ed.
-
-Currently a work in progress.
 
 Each file contains:
 - The question
