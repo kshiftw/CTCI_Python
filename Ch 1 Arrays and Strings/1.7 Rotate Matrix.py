@@ -14,6 +14,10 @@ def rotate_matrix(matrix: list) -> list:
     - For each layer, view each of the sides (top, bottom, left, right) as a list of its own and swap all cells
         - Save one side and use a loop to swap all corresponding indices
 
+    Complexity:
+    - Time: O(N*N) - must loop through all N*N elements
+    - Space: O(1) - constant space to swap values
+
     Approach:
     - Loop through layers by using a for loop to keep track of the layer index from 0 to half of N
         - Only need to go until the middle of the length of the matrix otherwise it will do more swapping than needed

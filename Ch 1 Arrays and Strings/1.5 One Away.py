@@ -7,13 +7,17 @@ import unittest
 from unittest import TestCase
 
 
-def one_away(string_one, string_two):
+def one_away(string_one: str, string_two: str) -> bool:
     """ Check if two strings are zero or one edit away from each other.
 
     Idea: Compare the two strings for the three scenarios:
     1) Equal length - compare all characters and see if there are any mismatches
     2) Unequal length (combine insert character and remove character into one check)
         - Check shorter string and see if every character is equal to the longer string except for one character
+
+    Complexity:
+    - Time: O(M+N) - need to loop through the M characters of string_one and N characters of string_two
+    - Space: O(1) - constant space to store comparison variables
 
     Approach:
     - Compare the two string lengths

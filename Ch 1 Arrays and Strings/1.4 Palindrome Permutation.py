@@ -18,6 +18,10 @@ def palindrome_permutation(string: str) -> bool:
         ex. 'aabcccbaa' -> {'a': 4, 'b': 2, 'c': 3}
     If there is more than one character that has an odd number of occurrences, then it cannot be a palindrome.
 
+    Complexity:
+    - Time: O(N) - need to loop through all N characters in string
+    - Space: O(N) - dictionary will store at most N elements if all characters are unique
+
     Approach:
     - Use Counter to get count of characters in the string
     - Loop through the character counts and keep track of how many odd_counts there are

@@ -16,6 +16,11 @@ def string_compression(string: str) -> str:
     order of characters in the string
     - We can maintain order by looping through the string and comparing each character with the previous character
 
+    Complexity:
+    - Time: O(N) - must loop through all characters of string
+    - Space: O(1) - result_str will be at most 26 * 2 * 2 characters where 26 is the number of alphabets, 2 is each
+    alphabet being uppercase or lowercase, and the last two being the character + count combination for each character
+
     Approach:
     - Loop through the string and compare the current character with the previously saved character
         - If it is the same, increase the count

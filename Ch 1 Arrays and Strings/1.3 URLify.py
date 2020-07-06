@@ -10,6 +10,10 @@ def urlify(string: str) -> str:
 
     Idea: Find all instances of space characters and replace with "%20"
 
+    Complexity:
+    - Time: O(N) - find all spaces by looping through the entire string
+    - Space: O(N) - string.split() returns a list of all space separated characters
+
     Approach:
     - use split() to get a list of words without space characters
     - use join() to join all the words together with '%20' as the separator

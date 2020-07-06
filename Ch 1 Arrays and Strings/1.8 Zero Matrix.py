@@ -12,6 +12,10 @@ def zero_matrix(matrix: list) -> list:
     Idea:
     - Keep track of original vs newly set zeros with an MxN matrix, new_zero
 
+    Complexity:
+    - Time: O(M*N) - loop through M*N elements
+    - Space: O(M*N) - new_zero is a matrix of size M*N
+
     Approach:
     - Loop through all cells of the matrix, if it is a 0 and an original zero, set all cells in that row and column to 0
 

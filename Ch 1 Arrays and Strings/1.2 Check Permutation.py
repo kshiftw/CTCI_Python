@@ -11,6 +11,10 @@ def check_permutation(first_string: str, second_string: str) -> bool:
 
     Idea: A string is a permutation of another if each string has the same number of occurrences of characters.
 
+    Complexity:
+    - Time: O(M+N) - need to loop through both M elements of first string and N elements of second string
+    - Space: O(M+N) - two dictionaries needed that will store a max of M + N elements if all characters are unique
+
     Approach:
     - Use Counter to get a dictionary containing the character as the key and their count as the value for each string
     - Compare the two Counters

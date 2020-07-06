@@ -11,6 +11,10 @@ def is_unique(string: str) -> bool:
 
     Idea: A string can only be unique if there is either 0 or 1 occurrences of each possible character.
 
+    Complexity:
+    - Time: O(N) - need to loop through all characters of the string
+    - Space: O(N) - if there are N unique characters, there must be N elements in the dictionary
+
     Approach:
     - Loop through all characters of the string
     - Keep a count of the number of occurrences for each character using a dictionary, char_dict

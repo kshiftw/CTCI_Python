@@ -18,6 +18,10 @@ def string_rotation(s1: str, s2: str) -> bool:
         - 'hellowo' in s1 is a substring of s2
         - the remaining substring of s1 'rld' must also be a substring of s2
 
+    Complexity:
+    - Time: O(N) - loop through all characters of s2
+    - Space: O(N) - need to store the substring that could be 0 to N-1 characters
+
     Approach:
     - Loop through s1 until we find the longest common substring with s2
     - Check if the remaining substring of s1 is also a substring of s2
