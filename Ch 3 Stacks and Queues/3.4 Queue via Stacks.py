@@ -34,7 +34,7 @@ class MyQueue:
         return self.pop_stack.pop()
 
     def print_stacks(self):
-        print(self.push_stack.print_stack(), self.pop_stack.print_stack())
+        print(self.push_stack.get_stack(), self.pop_stack.get_stack())
 
 
 class Stack:
@@ -50,7 +50,7 @@ class Stack:
     def is_empty(self):
         return True if len(self.stack) == 0 else False
 
-    def print_stack(self):
+    def get_stack(self):
         return self.stack
 
 
