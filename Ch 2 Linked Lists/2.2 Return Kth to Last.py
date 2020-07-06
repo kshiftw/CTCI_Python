@@ -15,6 +15,10 @@ def kth_to_last(llist: object, k: int) -> object:
     - Once we know the size of the linked list, we can use it to find the number of nodes from the head is required to
     get the kth to last element
 
+    Complexity:
+    - Time: O(N) - Need to loop through all elements once and then loop through once again for size - k nodes
+    - Space: O(1) - constant space to store size and node pointers
+
     Approach:
     - Perform two loops:
         - The first loop traverses the linked list to get the size

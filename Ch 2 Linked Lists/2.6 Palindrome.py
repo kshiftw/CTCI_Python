@@ -14,6 +14,10 @@ def palindrome(llist: object) -> bool:
     - Remove the elements from the stack and compare against the other half of the linked list
     - If there is a mismatch, then it is not a palindrome
 
+    Complexity:
+    - Time: O(N) - will traverse through all nodes of the linked list
+    - Space: O(N) - need a stack that stores N/2 elements
+
     Approach:
     - Calculate the length by looping through the linked list until the end
     - Use the length to loop through half the of the linked list, storing the node values into a stack

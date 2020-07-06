@@ -13,6 +13,10 @@ def remove_duplicates(llist: object) -> object:
     - We need to remove all values that appear more than once
     - A dictionary helps us with keeping track of values we have already seen
 
+    Complexity:
+    - Time: O(N) - need to loop through all nodes in the linked list
+    - Space: O(1) - constant space to store node pointers
+
     Approach:
     - Traverse the linked list and use a dictionary to keep track of values we have already seen
         - Keep track of the previous node while traversing

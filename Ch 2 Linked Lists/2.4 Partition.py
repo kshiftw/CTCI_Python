@@ -21,6 +21,10 @@ def partition(llist: object, x: int) -> object:
     Idea:
     - Create two linked lists, one for the left partition and the other for the right partition
 
+    Complexity:
+    - Time: O(N) - loop through all nodes to determine which partition to add it to
+    - Space: O(N) - need two linked lists that will store a total of N elements
+
     Approach:
     - Loop through the original list and add each node to the left or right partition depending on its value
     - When finished looping, merge the two partitions

@@ -25,6 +25,10 @@ def sum_lists(first_llist: object, second_llist: object) -> int:
     - Since the numbers are in reversed order, it is straightforward to use simple addition to add each digit, starting
     from the ones digit. In addition, we need to keep track of the carry bit if the digit sum is greater than 10
 
+    Complexity:
+    - Time: O(M+N) - loop through all M elements of first linked list and all N elements of second linked list
+    - Space: O(N) - sum_llist will be a linked list of size N
+
     Approach:
     - Loop through all nodes of both linked lists and calculate the sum of the corresponding digits
     - Create a new linked list, sum_llist, that appends the sum as a new node

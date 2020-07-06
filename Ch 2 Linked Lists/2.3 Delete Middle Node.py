@@ -19,6 +19,10 @@ def delete_middle_node(middle: object) -> object:
     - Instead of trying to change the previous node's next link, we keep it pointing to the middle node and instead,
     change the value of the middle node to its next node
 
+    Complexity:
+    - Time: O(1) - constant time to swap two element values
+    - Space: O(1) - constant space to swap values
+
     Approach:
     - Copy the next node's value and set it as the middle node's value
     - Modify the next link so that it leapfrogs over the next node
