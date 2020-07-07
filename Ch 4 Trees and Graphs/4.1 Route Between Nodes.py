@@ -16,8 +16,8 @@ def route_between_nodes(graph: dict, first_node: int, second_node: int) -> bool:
     - DFS search through the adjacency list until the second_node is found. If not found, there are no routes between.
 
     Complexity:
-    - Time: O(N) - need to access all nodes if route doesn't exist or the node is the last node we look at
-    - Space: O(N) - visited array needs to store up to N values
+    - Time: O(V + E) - need to access all nodes if route doesn't exist or the node is the last node we look at
+    - Space: O(V) - has_route will be added to call stack up to V times
 
     Approach:
     - Recursively call has_route with each adjacent vertex (neighbour)
