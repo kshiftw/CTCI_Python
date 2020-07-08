@@ -43,9 +43,6 @@ class LinkedList:
         tail = self.get_tail()
         tail.next = llist.get_head()
 
-    def add(self, value):
-
-
 
 class Node:
     def __init__(self, value):

@@ -4,6 +4,7 @@ algorithm to create a binary search tree with minimal height.
 """
 import unittest
 from unittest import TestCase
+from tree import TreeNode
 
 
 def minimal_tree(array: list) -> object:
@@ -24,28 +25,10 @@ def minimal_tree(array: list) -> object:
     if not array:
         return
     mid = len(array) // 2
-    node = Node(array[mid])
+    node = TreeNode(array[mid])
     node.left = minimal_tree(array[:mid])
     node.right = minimal_tree(array[mid+1:])
     return node
-
-
-class Node:
-    def __init__(self, value):
-        self.value = value
-        self.left = None
-        self.right = None
-        self.array = []
-
-    def get_children(self):
-        def traverse(node):
-            if not node:
-                return
-            self.array.append(node.value)
-            traverse(node.left)
-            traverse(node.right)
-        traverse(self)
-        return self.array
 
 
 class TestMinimalTree(TestCase):
