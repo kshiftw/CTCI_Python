@@ -4,6 +4,7 @@ class TreeNode:
         self.left = None
         self.right = None
         self.array = []
+        self.parent = None
 
     def get_children(self):
         def traverse(node):
