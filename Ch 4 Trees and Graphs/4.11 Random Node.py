@@ -71,7 +71,7 @@ class TreeNode:
         self.size += 1
 
 
-class TestRouteBetweenNodes(TestCase):
+class TestGetRandomNode(TestCase):
     def testA(self):
         tree = TreeNode(10)
         tree.insert(5)
