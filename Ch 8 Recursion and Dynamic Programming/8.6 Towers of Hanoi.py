@@ -37,18 +37,18 @@ def towers_hanoi(n: int, origin: list, buffer: list, destination: list):
 
 class TestTowersHanoi(TestCase):
     def testA(self):
-        tower1 = [1, 2, 3, 4]
+        tower1 = [4, 3, 2, 1]
         tower2 = []
         tower3 = []
         towers_hanoi(4, tower1, tower2, tower3)
-        self.assertEqual(tower3, [1, 2, 3, 4])
+        self.assertEqual(tower3, [4, 3, 2, 1])
 
     def testB(self):
-        tower1 = [1, 2, 3, 4, 5, 6, 7, 8]
+        tower1 = [8, 7, 6, 5, 4, 3, 2, 1]
         tower2 = []
         tower3 = []
         towers_hanoi(8, tower1, tower2, tower3)
-        self.assertEqual(tower3, [1, 2, 3, 4, 5, 6, 7, 8])
+        self.assertEqual(tower3,  [8, 7, 6, 5, 4, 3, 2, 1])
 
 
 if __name__ == "__main__":
