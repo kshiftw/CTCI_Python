@@ -24,7 +24,6 @@ def parens(n: int) -> list:
 
     Approach:
     - Base cases:
-        - If there are no more left parentheses remaining, it is invalid
         - If we have used up more closing (right) parentheses than opening (left) parentheses, it is invalid
         - If we have used up all left and right parentheses, it is a valid combination - add it to the combo list
     - Recursively add left parentheses
@@ -33,17 +32,17 @@ def parens(n: int) -> list:
     parens_list = []
 
     def next_parens(left_remain, right_remain, string):
-        if left_remain < 0 or right_remain < left_remain:
+        if right_remain < left_remain:
             return
         if left_remain == 0 and right_remain == 0:
             parens_list.append(string)
             return
 
-        string += '('
-        next_parens(left_remain - 1, right_remain, string)
-
-        string = string[:-1] + ')'
-        next_parens(left_remain, right_remain - 1, string)
+        if left_remain:
+            parens(left_remain - 1, right_remain, string + "(")
+            
+        if right_remain:
+            parens(left_remain, right_remain - 1, string + ")")
 
     next_parens(n, n, "")
     return parens_list
